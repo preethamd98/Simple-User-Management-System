@@ -1,0 +1,17 @@
+<h1>Search Users</h1>
+{{#if error}}<span>{{error}}</span>{{/if}}
+<form class="form" action="/user/add" method="post">
+  <div class="form-group">
+    <label>ID</label>
+    <input type="text" name="id" class="form-control" placeholder="id">
+    <label>First Name</label>
+    <input type="text" name="first_name" class="form-control" placeholder="First Name">
+    <label>Last Name</label>
+    <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+    <label>Em@il</label>
+    <input type="text" name="email" class="form-control" placeholder="em@il">
+    <label>Phone No</label>
+    <input type="text" name="phoneno" class="form-control" placeholder="Phone Number">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Save">
+</form>
